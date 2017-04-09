@@ -1,0 +1,2 @@
+# Hack112
+NewsHack
