@@ -28,12 +28,8 @@ def listOfArticles():
 def findArticles(country):
     articleList = listOfArticles()
     articles = []
-    articlecount = 0
     for article in articleList:
         if country in article['title']:
-            articles.append([article['title'], article['url']])
-            articlecount += 1
-    # returns a tuple
-    # 1st is a list of title, url
-    # second is article count
-    return(articles, articlecount)
+            articles.append((article['title'], article['url']))
+    # returns a 2d list of title, url
+    return articles
